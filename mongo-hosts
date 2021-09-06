@@ -1,0 +1,7 @@
+[local]
+localhost       ansible_connection=local
+
+[mongo-server-1]
+10.0.0.11
+[mongo-servers:children]
+mongo-server-1
